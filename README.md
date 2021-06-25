@@ -12,4 +12,11 @@ With 79 explanatory variables describing (almost) every aspect of residential ho
 
 ## 🔍 ABOUT THIS PROJECT
 
+  The aim of this project is to analyze a dataset in order to develop a machine learning model and predict house's sale price.
+  The dataset is available in a "Getting Started Competition" in Kaggle (link available above).
+  
+  With 79 variables, the maint point was selecting which were the most important caracteristics to build our Machine Learning Model. I've been through data analysis, worked with null values, features select and engineering.
+  
+  The final Machine Learning model was Random Forest Regressor, despite i've trained Simple Linear Regression, Linear Regression Regularized, XGBoost Regressor and some more. All these models were trained with cross validation technique for the purpose of avoiding overfitting.
+
 ## 📚 HOW THIS NOTEBOOK IS ORGANIZED
