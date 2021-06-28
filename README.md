@@ -21,6 +21,9 @@ With 79 explanatory variables describing (almost) every aspect of residential ho
 
 ## 📚 HOW THIS NOTEBOOK IS ORGANIZED
   This notebook is based on a structured sequence: starting from data analysis, understanding the dataset as number of rows and it's dimensions, identifying with the main features and what they stand for, comprehending how the attributes are correlated and specially how they can explain the house price. 
+  
   There were an extensive section to get familiar with these informations. To make it clear, there're were some hypothesis based on house's caracteristics (note: the hypothesis testing was not a statistical method. It was used as a "guide" for our data analysis. There's a dedicated section about it, you can check it out here: Mind Map for Data Analysis). 
+  
   Still about the dataset undertanding, due to it dimensions (almost 79), an analyze was needed in order to identify which features could be unnecessary. In this step, after have knowledge of the attributes, we had moved to feature engineering.
+  
   There was a good work in feature selection. As support, Boruta algorithm was implemented. 
