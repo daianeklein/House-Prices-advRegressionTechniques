@@ -27,3 +27,67 @@ With 79 explanatory variables describing (almost) every aspect of residential ho
   Still about the dataset undertanding, due to it dimensions (almost 79), an analyze was needed in order to identify which features could be unnecessary. In this step, after have knowledge of the attributes, we had moved to feature engineering.
   
   There was a good work in feature selection. As support, Boruta algorithm was implemented. 
+  
+  Finally, several machine learning models were trained, starting with a average model as a baseline, following by some regression models and at last, Random Forest Regressor chosen for it's best score.
+  
+  All these steps are explained better in following sections.
+
+
+****
+
+## 📎   TABLE OF CONTENTS
+
+ - 01  Personal growth and skill development 
+ - 02  Dataset info - Data types, missing values and dimension analysis
+ - 03  Descriptive analysis
+ - 04  Feature Engineering
+ - 05  Data Preparation
+ - 06  Feature Selection
+ - 07  Machine Learning Model
+ - 08  Hyperparameter Tuning
+ - 09  Performance Analysis
+ - 10  Conclusion
+ - 11  References
+
+****
+
+## 💡 Personal growth and skill development
+
+****
+
+##  📌   DATASET INFO
+
+### Missing Values
+
+  This dataset contains a lot of missing values scattered in almost 20 different variables. With the aim of understand the exactly quantity and its impact, the table below was created:
+  
+  <img src="https://i.ibb.co/Fs1DRdY/Screenshot-at-jun-28-21-40-09.png" alt="Screenshot-at-jun-28-21-40-09" width="224" height="473">
+  
+  As we can see, variable named PoolQC (Pool quality) has 1.453 null values, which corresponds to 99.52% of our entire dataset.
+  It's similar to MiscFeature (Miscellaneous feature not covered in other categories) with 96.30% missing values, Alley (Type of alley access to property) with 93.76% and so on...
+  
+  Intending to deal with then, we adopt the following criteria:
+  
+  First of all, we had checked the percentage of null values for each variable.
+
+1. Variables with more than 40% null values were dropped from our dataset.
+
+    PoolQC 99.52%
+
+    MiscFeature | 96.30%
+
+    Alley | 93.76%
+
+    Fence | 80.75%
+
+    FireplaceQu | 47.26%
+
+2. Second step, we filled null values using Pandas method: ffill for all variables between 1 and 18% null values.
+
+3. Last step, all missing values left were replaced by it's mode.
+  
+
+### Dimension Analysis
+
+****
+
