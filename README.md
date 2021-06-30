@@ -59,7 +59,7 @@ With 79 explanatory variables describing (almost) every aspect of residential ho
 
 ### Missing Values
 
-  This dataset contains a lot of missing values scattered in almost 20 different variables. With the aim of understand the exactly quantity and its impact, the table below was created:
+  This dataset contains a lot of missing values scattered in almost 20 different variables. With the aim of understanding the exactly quantity and its impact, the table below was created:
   
   <img src="https://i.ibb.co/Fs1DRdY/Screenshot-at-jun-28-21-40-09.png" alt="Screenshot-at-jun-28-21-40-09" width="224" height="473">
   
@@ -86,8 +86,26 @@ With 79 explanatory variables describing (almost) every aspect of residential ho
 
 3. Last step, all missing values left were replaced by it's mode.
   
+***
 
 ### Dimension Analysis
 
+As said above, this dataset have almost 80 differents variables. To avoid overfitting and to make the analysis easier, better to undertand and most importantly, build a machine learning model able to generalize new data, we've worked in dataset dimension.
+
+With a declared function, splitted in categorical and numerical variable, we could look at each value and the relative frequencie of then.
+
+<img src="https://i.ibb.co/716pKwm/Screenshot-at-jun-29-22-25-44.png" alt="Screenshot-at-jun-29-22-25-44" width="875" height="284" data-load="full" style="">
+
+For example, for "Street" variable (Type of road access to property), we can observe more than 99% observations concentrated in "Pave" type. These kind of situation were dropped from our main dataset once it couldn't explain house price.
+
+<img src="https://i.ibb.co/44zmScC/Screenshot-at-jun-29-22-24-21.png" alt="Screenshot-at-jun-29-22-24-21" width="262" height="109">
+
+So, the following numerical attributes were dropped: 'MSSubClass', 'MiscVal', 'PoolArea', 'ScreenPorch', '3SsnPorch', 'EnclosedPorch', 'KitchenAbvGr', 'BsmtHalfBath', 'LowQualFinSF', 'BsmtFinSF2'.
+
+For categorical ones: SaleCondition','SaleType', 'PavedDrive', 'GarageCond', 'GarageQual', 'Functional', 'Electrical', 'CentralAir',
+'Heating', 'BsmtFinType2', 'BsmtCond', 'RoofMatl', 'BldgType', 'Condition2', 'Condition1', 'LandSlope',
+'Utilities', 'Street'
+
 ****
 
+##  📌   DESCRIPTIVE ANALYSIS
