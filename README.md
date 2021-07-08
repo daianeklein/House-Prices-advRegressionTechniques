@@ -96,7 +96,7 @@ With a declared function, splitted in categorical and numerical variable, we cou
 
 <img src="https://i.ibb.co/716pKwm/Screenshot-at-jun-29-22-25-44.png" alt="Screenshot-at-jun-29-22-25-44" width="875" height="284" data-load="full" style="">
 
-For example, for "Street" variable (Type of road access to property), we can observe more than 99% observations concentrated in "Pave" type. These kind of situation were dropped from our main dataset once it couldn't explain house price.
+For example, for "Street" variable (Type of road access to property), we can observe more than 99% observations concentrated in "Pave" type. These kind of situation was dropped from our main dataset once it couldn't explain house price.
 
 <img src="https://i.ibb.co/44zmScC/Screenshot-at-jun-29-22-24-21.png" alt="Screenshot-at-jun-29-22-24-21" width="262" height="109">
 
@@ -109,3 +109,37 @@ For categorical ones: SaleCondition','SaleType', 'PavedDrive', 'GarageCond', 'Ga
 ****
 
 ##  📌   DESCRIPTIVE ANALYSIS
+
+In this section, the goal is studing our data using some basic descriptive measures. 
+First of all, we took a look at our dependent variable. Although is not a perfect shape, it's close to a normal distribution, so, at first, we won't do any transformation
+
+<img src="https://i.ibb.co/w4Jj0Fr/sale.png" alt="sale" width="485" height="267">
+
+For our independent variables, we've splitted in categorical and numerical variables. 
+For numerical variables, creating a Pandas DataFrame, we glance at some descriptive analysis such mean, median, standard desviation, min and max value and it range. The result is the following table:
+
+<img src="https://i.ibb.co/xqX133G/Screenshot-at-jul-07-22-54-04.png" alt="Screenshot-at-jul-07-22-54-04" width="492" height="284">
+
+Still in numerical exploration, we also plotted some charts, especially scatterplot in order to look at our data behavior and check if there's some concentration somewhere in our axis.
+
+For categorical attributes, we mainly visualized our data using boxplot chart.
+
+Concluding this section, we had made some important observations, as follows:
+
+Numerical Variable Analysis
+
+- Some numerical variable, although is int type, have a categorical behavior, as MoSold, YrSold or GarageCars, so, a scatterplot it's not usefull for meaninfull analysis. We're going to plot a boxplot chart for then.
+
+- For other variables, we can notice some linear behavior for some dependent and independent variables, and some not.
+
+- LotArea, YearRemodYear, YearBuilt, some variables regarded to basement característics are not so clear to explain sale price.
+
+- For our numerical variables plotted in boxplot charts, datetime caracteristics are not so relevant. There're some differences, but not so meaninfull, specially when comparing to other variables of our dataset.
+
+Categorical Variable Analysis
+
+- Most of our categorical variables looks like relevant for our analysis. LostConfig and LotShape, for instance, have some differences, but very subles differences. Possibly, it won't make huge difference. Once again, variables regarded to basement caracteristics don't have many statistical differences.
+
+***
+
+##  📌   FEATURE ENGINEERING
