@@ -143,3 +143,84 @@ Categorical Variable Analysis
 ***
 
 ##  📌   FEATURE ENGINEERING
+
+We can divide the work in this section in two steps:
+
+1. Variable transformation
+
+   Adding, replacing and dropping some features.
+
+2. Hypothesis
+
+   In this "subsection", we've created some hypothesis in order to analyze our data, examine correlation and look over which features are more and less important to our Machine Learning model:
+
+<hr>
+REMODELED HOUSES
+
+  A) Remodeled houses cost more
+  
+   Remodeled houses dont' cost more.
+
+   Mean Price:
+    
+   Modeled Houses: 179096.307471
+
+   Not modeled Houses: 182583.659686
+
+   Conclustion: Variable not so relevant for our model.
+
+  B) Remodeled houses have a better quality condition and then, cost more
+
+   There's a difference, specially for rating 9, but it's not possible to consider as a importante variable.
+<hr>
+GARAGE
+
+  A). Houses with more car capacity cost more
+
+  B). Houses with no car space cost less
+
+   Sale price increase if there’s more garage space until 3 garages cars. Houses with capacity for 4 cars have it’s sale price lower.
+
+   This variable was considered as importante for our ML model.
+
+   III. Houses with more than one type of garage cost more
+
+   There’s big differences among the garage type. Carport garage’s have the lowest price, even considering it’s outlier.
+<hr>
+BASEMENT
+
+  A) Houses with unfinished basement cost less
+
+  This hypothesis is not true. There’s a difference regarding to price sale, especially for basement classified in GLQ (Good living quarters) category. All categories left don’t change too much.
+
+  We're going to determine if this variable is importante for our ML model in other analysis later. (Not sure about it’s impact)
+
+  B). Houses with bad basement quality have worst quality rating and cost less 
+
+  Houses classified as Excellent and Fair have it’s price more distributed than good and typical. Same for basement type.
+
+  We're going to determine if this variable is importante for our ML model in other analysis later. (Not sure about it’s impact)
+
+<hr>
+KITCHEN
+
+   A) Houses with good quality rating cost more
+
+  Kitchen classified in “Excellent” category have it’s price higher while kitchen with “Fair” category have it’s price lower.
+<hr>
+BATH
+
+A) Houses with full bath + half bath cost more
+
+Full bath have more impact to house price than Half bath. Considering both (half + full bath), we can see a huge price difference. This variable is importante for our ML model.
+<hr>
+LOT CONFIGURATION AND AREA
+
+A) Houses with more than one frontage (entry) cost more
+
+B) Irregular lots shape cost less
+
+There’s not big price difference among log configuration categories. This variable is not importante for our ML model.
+
+Lot shape, despite it’s small difference, won’t be considered as importante for our machine learning model.
+    
