@@ -224,3 +224,19 @@ There’s not big price difference among log configuration categories. This vari
 
 Lot shape, despite it’s small difference, won’t be considered as importante for our machine learning model.
     
+**Univariate and Multivariate Analysis**
+
+Still in feature engineering section, we analyzed some correlation between numerical variables.
+For categorical variables we had some boxplot charts.
+
+***
+
+##  📌   DATA PREPARATION
+
+In this step, we've prepared our data to better perform in Machine Learning models. Normalization and standardization techiniques were applied in numerical variables.
+
+For categorical variables, label and ordinal encoders were used in order to transform them.
+
+***
+
+##  📌   FEATURE SELECTION
