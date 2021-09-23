@@ -52,6 +52,7 @@ With 79 explanatory variables describing (almost) every aspect of residential ho
 ****
 
 ## 💡 Personal growth and skill development
+   
 
 ****
 
@@ -240,3 +241,22 @@ For categorical variables, label and ordinal encoders were used in order to tran
 ***
 
 ##  📌   FEATURE SELECTION
+  For feature selection, in the first instance, we considered the previous data analysis. 
+Then, implementing Boruta Algorithm, we had as result some features considered as important for the Machine Learning model. 
+
+Note: Boruta algorithm is a wrapper based on random forest classification algorithm. 
+
+In our previous analysis, we've considered the following features as important:
+KitchenQual | Kitchen quality
+FullBath | Full bathrooms above grade
+HalfBath | Half baths above grade
+Variables related to garage (garage type, garage area, car space)
+
+Features considered as not important:
+LotArea
+Lot Shape
+Variables related to area and lot shape
+Variables related to house modelling.
+
+Comparing Boruta result to our data analysis, we selected some variables for our Machine Learning model, as follows: Neighborhood, KitchenQual, LotFrontage, OverallQual, BsmtFinSF1, 1stFlrSF, 2ndFlrSF,GrLivArea, GarageArea, OpenPorchSF, TOTAL_BATH, GarageFinish_Unf, OverallCond, GarageType
+
