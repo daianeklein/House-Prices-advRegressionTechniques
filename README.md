@@ -44,15 +44,11 @@ With 79 explanatory variables describing (almost) every aspect of residential ho
  - 05  Data Preparation
  - 06  Feature Selection
  - 07  Machine Learning Model
- - 08  Hyperparameter Tuning
- - 09  Performance Analysis
- - 10  Conclusion
- - 11  References
+ - 08  Performance Analysis
+ - 09  Conclusion
+ - 10  References
 
 ****
-
-## 💡 Personal growth and skill development
-   
 
 ****
 
@@ -259,4 +255,45 @@ Variables related to area and lot shape
 Variables related to house modelling.
 
 Comparing Boruta result to our data analysis, we selected some variables for our Machine Learning model, as follows: Neighborhood, KitchenQual, LotFrontage, OverallQual, BsmtFinSF1, 1stFlrSF, 2ndFlrSF,GrLivArea, GarageArea, OpenPorchSF, TOTAL_BATH, GarageFinish_Unf, OverallCond, GarageType
+
+***
+
+##  📌   MACHINE LEARNING MODEL
+
+Our first model was a average measure that was a "model" used as a baseline. In other words, the goal was to get a better model than the average values, otherwise, why should we manipulate, clean and do a bunch of analysis if a simple mean function would have a better performance?
+
+Then, we have tried the following models:
+
+- Linear Regression
+- Linear Regression Regularized Model
+- Random Forest Regressor
+- XGBoost
+
+All of these models (except for 'average model' we've trained with cross validation method.
+
+We got different results:
+
+|ModelName|MAE|MAPE|RMSE|
+|-------|----|----|----|
+|Random Forest Regressor|	17954.102066|0.107018|27806.906338|
+|XGBoost Regressor|19921.151306|0.113741|32920.497776|
+|Linear Regression|22590.355094|0.136715|35596.407737|
+|Linear Regression - Lasso|22587.863747|0.136674|35600.977790|
+|AVG Model|59303.878026|0.382768|83697.724296|
+
+Looking at mean and standard deviation applyed in Cross Validation techniques, we had the following results: 
+
+|LR_CV|LRR_CV	|RF_CV|XGB_CV|
+|---|---|---|---|
+|Mean|0.693962|0.694535|0.795081|0.741522|
+|STD|0.237337|0.236138|0.153559|0.204619|
+
+
+***
+
+##  📌   PERFORMANCE ANALYSIS
+
+***
+
+##  📌   CONCLUSION
 
