@@ -50,8 +50,6 @@ With 79 explanatory variables describing (almost) every aspect of residential ho
 
 ****
 
-****
-
 ##  📌   DATASET INFO
 
 ### Missing Values
@@ -293,7 +291,34 @@ Looking at mean and standard deviation applyed in Cross Validation techniques, w
 
 ##  📌   PERFORMANCE ANALYSIS
 
-***
+Our first criterion to choose the best model was RMSE result (root-mean-square deviation), which Random Forest Regressor had the best one.
+
+Secondly, analyzinh Cross validation results, we could see that Random Forest Regressor had the lower STD and therefore, the best result we were looking for.
+
+Taking a look at our residuals, we got the following results:
+Mean Residuals: 1351.79
+
+Mean SalePrice: 178547.92
+
+Mean Predictions: 177196.12
+
+As we can notice by looking at these numbers, our residuals have a normal behaviour, exactly what we were expecting.
+
+We can see its distibution more clearly in a histogram:
+
+<img src="https://i.ibb.co/ccMvB6Z/Screenshot-at-Sep-27-21-05-54.png" alt="Screenshot-at-Sep-27-21-05-54" width="489" height="365">
+
+Below, we have a line plot where we can analyze the differece between our predictions and the real price. We do have some differences (already expected) but in general, the values are pretty homogeneous.
+
+<img src="https://i.ibb.co/sj3VCf9/Screenshot-at-Sep-27-21-06-07.png" alt="Screenshot-at-Sep-27-21-06-07" width="496" height="361">
 
 ##  📌   CONCLUSION
+
+Finally, we can see our predictions and the real house price:
+
+<img src="https://i.ibb.co/sFFjZ9q/Screenshot-at-Sep-27-21-13-26.png" alt="Screenshot-at-Sep-27-21-13-26" width="1008" height="249" data-load="full" style="">
+
+***
+
+
 
